@@ -10,13 +10,28 @@ What value do you think it offers?
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+  Only stage 1 change at a time--if you have made multiple changes since the last commit, you can still commit them separately and one at a time by using the staging area and multiple commits.
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+  Branches are useful for developing new features and for keeping a workflow organized, such as development/staging/production, etc.
+
 How do the diagrams help you visualize the branch structure?
 
-What is the result of merging two branches together? Why do we represent it in
-the diagram the way we do?
+  The diagrams help visualize the branch structure by giving visual representation to the branch structure.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+  The result of merging two branches together is that commits from both branches are combined onto one of the two branches. All the commits stay, they are just all on one branch now. There is also a new commit, which is the merge commit. The diagram is a visual representation of this process--before the merge there are two separate lines of commits, one for each branch, then after the merge the two lines merge, visually, into the merge commit on the branch that got merged into.
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+  Automatic merging:
+    pros: convenient, fast, easy, accurate if no conflicts
+    cons: not possible if conflicts
+
+  Manual merging:
+    pros: manual detailed review and resolution in the case of conflicts, which enables highly accurate merging even when conflicts exist
+    cons: more time-consuming than automatic merging
